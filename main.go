@@ -1,7 +1,11 @@
 package main
 
-import("fmt")
+import (
+	"fmt"
+	"goLeedCode/util"
+)
 
-func main(){
+func main() {
 	fmt.Println("hello , go")
+	util.Test()
 }
