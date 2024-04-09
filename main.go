@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"goLeedCode/util"
+	"goLeedCode/array"
 )
 
 func main() {
-	fmt.Println("hello , go")
-	util.Test()
+	array.Test()
 }
