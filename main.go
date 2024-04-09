@@ -2,8 +2,9 @@ package main
 
 import (
 	"goLeedCode/array"
+	"goLeedCode/util"
 )
 
 func main() {
-	array.Test()
+	util.ArrayTest(array.Test704{})
 }
