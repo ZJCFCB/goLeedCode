@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	util.ArrayTest(array.Test704{})
+	util.ArrayTest(array.Test27{})
 }
