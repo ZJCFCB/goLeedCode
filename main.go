@@ -1,10 +1,10 @@
 package main
 
 import (
-	"goLeedCode/array"
+	"goLeedCode/list"
 	"goLeedCode/util"
 )
 
 func main() {
-	util.ArrayTest(array.Test209{})
+	util.ListTest(list.Test203{})
 }
