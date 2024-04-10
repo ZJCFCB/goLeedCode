@@ -42,3 +42,14 @@ func TurnListToArray(head *ListNode) []int {
 	}
 	return ans
 }
+
+func TurnListToArrayMyLinkedList(head *MyLinkedList) []int {
+	var work *MyLinkedList = head
+	var ans []int
+	for work != nil {
+
+		ans = append(ans, work.Val)
+		work = work.Next
+	}
+	return ans
+}
