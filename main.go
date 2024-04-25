@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	util.ListTest(&hash.Test202{})
+	util.ListTest(&hash.Test1{})
 }
