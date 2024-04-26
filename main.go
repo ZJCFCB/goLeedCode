@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	util.ListTest(&stackAndqueue.Test232{})
+	util.ListTest(&stackAndqueue.Test225{})
 }
