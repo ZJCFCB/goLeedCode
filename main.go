@@ -1,10 +1,10 @@
 package main
 
 import (
-	"goLeedCode/stackAndqueue"
+	"goLeedCode/binaryTree"
 	"goLeedCode/util"
 )
 
 func main() {
-	util.ListTest(&stackAndqueue.Test347{})
+	util.ListTest(&binaryTree.Test226{})
 }
