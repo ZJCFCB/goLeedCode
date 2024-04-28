@@ -5,9 +5,24 @@ import "fmt"
 type Test226 struct {
 }
 
-func (T Test226) Run() {
-	num := []int{1, 2, 3, -1, 4, 5, 6, -1, -1, -1, -1, -1, -1, 7, -1}
-	t := NewTree(num)
+func invertTree(root *TreeNode) *TreeNode {
+	if root == nil {
+		return root
+	}
+	root.Left, root.Right = root.Right, root.Left
+	if root.Left != nil {
+		invertTree(root.Left)
+	}
+	if root.Right != nil {
+		invertTree(root.Right)
+	}
+	return root
+}
 
-	fmt.Println(PrintTree(t, 3))
+func (T Test226) Run() {
+	num := []int{4, 2, 7, 1, 3, 6, 9}
+	t := NewTree(num)
+	t = invertTree(t)
+
+	fmt.Println(PrintTree(t, 1))
 }
