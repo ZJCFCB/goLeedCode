@@ -55,42 +55,42 @@ func PrintTree(T *TreeNode, choice int) []int { // 1 表示先序遍历 2 标识
 	var result []int = make([]int, 0, 10)
 	switch choice {
 	case 1:
-		result = Preorder(T, result)
+		result = preorder(T, result)
 	case 2:
-		result = Inorder(T, result)
+		result = inorder(T, result)
 	case 3:
-		result = Postorder(T, result)
+		result = postorder(T, result)
 	}
 	return result
 }
-func Preorder(T *TreeNode, result []int) []int {
+func preorder(T *TreeNode, result []int) []int {
 	result = append(result, T.Val)
 	if T.Left != nil {
-		result = Preorder(T.Left, result)
+		result = preorder(T.Left, result)
 	}
 	if T.Right != nil {
-		result = Preorder(T.Right, result)
+		result = preorder(T.Right, result)
 	}
 	return result
 }
 
-func Inorder(T *TreeNode, result []int) []int {
+func inorder(T *TreeNode, result []int) []int {
 	if T.Left != nil {
-		result = Inorder(T.Left, result)
+		result = inorder(T.Left, result)
 	}
 	result = append(result, T.Val)
 	if T.Right != nil {
-		result = Inorder(T.Right, result)
+		result = inorder(T.Right, result)
 	}
 	return result
 }
 
-func Postorder(T *TreeNode, result []int) []int {
+func postorder(T *TreeNode, result []int) []int {
 	if T.Left != nil {
-		result = Postorder(T.Left, result)
+		result = postorder(T.Left, result)
 	}
 	if T.Right != nil {
-		result = Postorder(T.Right, result)
+		result = postorder(T.Right, result)
 	}
 	result = append(result, T.Val)
 	return result
