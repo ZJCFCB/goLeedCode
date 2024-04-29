@@ -52,7 +52,11 @@ func NewTree(data []int) *TreeNode {
 }
 
 func PrintTree(T *TreeNode, choice int) []int { // 1 表示先序遍历 2 标识中序遍历  3 表示后续遍历
+
 	var result []int = make([]int, 0, 10)
+	if T == nil {
+		return result
+	}
 	switch choice {
 	case 1:
 		result = preorder(T, result)
