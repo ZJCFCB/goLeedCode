@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	util.ListTest(&binaryTree.Test501{})
+	util.ListTest(&binaryTree.Test236{})
 }
