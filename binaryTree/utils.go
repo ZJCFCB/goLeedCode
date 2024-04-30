@@ -99,3 +99,29 @@ func postorder(T *TreeNode, result []int) []int {
 	result = append(result, T.Val)
 	return result
 }
+
+// 二叉树的层次遍历
+func Levelorder(T *TreeNode) [][]int {
+	var treequeue []*TreeNode
+	var result [][]int
+	treequeue = append(treequeue, T)
+
+	for len(treequeue) > 0 {
+		var temp []int
+		length := len(treequeue)
+		for i := 0; i < length; i++ {
+			//队首元素出队
+			front := treequeue[0]
+			treequeue = treequeue[1:]
+			temp = append(temp, front.Val)
+			if front.Left != nil {
+				treequeue = append(treequeue, front.Left)
+			}
+			if front.Right != nil {
+				treequeue = append(treequeue, front.Right)
+			}
+		}
+		result = append(result, temp)
+	}
+	return result
+}
