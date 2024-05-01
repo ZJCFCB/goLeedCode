@@ -1,10 +1,10 @@
 package main
 
 import (
-	"goLeedCode/binaryTree"
+	"goLeedCode/string"
 	"goLeedCode/util"
 )
 
 func main() {
-	util.ListTest(&binaryTree.Test538{})
+	util.ListTest(string.Test344{})
 }
