@@ -1,10 +1,10 @@
 package main
 
 import (
-	"goLeedCode/hash"
+	"goLeedCode/backtrack"
 	"goLeedCode/util"
 )
 
 func main() {
-	util.ListTest(hash.Test454{})
+	util.ListTest(backtrack.Test77{})
 }
