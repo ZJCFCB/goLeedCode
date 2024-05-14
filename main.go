@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	util.ListTest(backtrack.Test17{})
+	util.ListTest(backtrack.Test39{})
 }
