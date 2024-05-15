@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	util.ListTest(greedy.Test45{})
+	util.ListTest(greedy.Test1005{})
 
 }
