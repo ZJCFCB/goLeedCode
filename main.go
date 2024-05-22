@@ -1,12 +1,12 @@
 package main
 
 import (
-	"goLeedCode/greedy"
+	"goLeedCode/dynamic"
 	"goLeedCode/util"
 )
 
 func main() {
 
-	util.ListTest(greedy.Test738{})
+	util.ListTest(dynamic.Test509{})
 
 }
