@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	util.ListTest(dynamic.Test746{})
+	util.ListTest(dynamic.Test62{})
 
 }
