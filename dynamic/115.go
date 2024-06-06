@@ -22,9 +22,6 @@ func numDistinct(s string, t string) int {
 				dp[i][j] = dp[i][j-1]
 			}
 		}
-		if i == 1 {
-			fmt.Println(dp)
-		}
 	}
 	return dp[len(t)][len(s)]
 }
