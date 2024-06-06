@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	util.ListTest(monotonicstack.Test739{})
+	util.ListTest(monotonicstack.Test496{})
 
 }
