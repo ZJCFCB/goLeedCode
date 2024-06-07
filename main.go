@@ -1,12 +1,12 @@
 package main
 
 import (
-	"goLeedCode/graph"
+	"goLeedCode/order"
 	"goLeedCode/util"
 )
 
 func main() {
 
-	util.ListTest(graph.Test200{})
+	util.ListTest(order.Test2{})
 
 }
