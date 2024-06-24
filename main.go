@@ -1,12 +1,12 @@
 package main
 
 import (
-	"goLeedCode/order"
+	"goLeedCode/hot100"
 	"goLeedCode/util"
 )
 
 func main() {
 
-	util.ListTest(order.Test438{})
+	util.ListTest(hot100.Test49{})
 
 }
