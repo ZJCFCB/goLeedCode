@@ -23,7 +23,7 @@ func NewTree(data []int) *TreeNode {
 	treeSet = append(treeSet, NewNode(len(data))) // 添加一个头节点，放在第0号位置
 
 	for _, v := range data {
-		if v == -1 {
+		if v == -100 {
 			treeSet = append(treeSet, nil)
 		} else {
 			treeSet = append(treeSet, NewNode(v))
