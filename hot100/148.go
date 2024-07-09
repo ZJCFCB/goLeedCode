@@ -27,7 +27,7 @@ func merge(l1, l2 *ListNode) *ListNode {
 	return newHead.Next
 }
 
-func sort(head, tail *ListNode) *ListNode {
+func ssort(head, tail *ListNode) *ListNode {
 	if head == nil {
 		return nil
 	}
@@ -45,10 +45,10 @@ func sort(head, tail *ListNode) *ListNode {
 	}
 
 	mid := slow
-	return merge(sort(head, mid), sort(mid, tail))
+	return merge(ssort(head, mid), ssort(mid, tail))
 }
 func sortList(head *ListNode) *ListNode {
-	return sort(head, nil)
+	return ssort(head, nil)
 }
 
 func (test Test148) Run() {
