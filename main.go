@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	util.ListTest(classic.Test169{})
+	util.ListTest(classic.Test274{})
 
 }
