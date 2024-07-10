@@ -24,9 +24,6 @@ func twoSum(numbers []int, target int) []int {
 		return -1
 	}
 	var left, right int = 0, len(numbers) - 1
-	// for right >= 0 && numbers[right] > target {
-	// 	right--
-	// }
 	for left < right {
 		temp := ef(left+1, right, target-numbers[left])
 		if temp != -1 {
