@@ -1,12 +1,12 @@
 package main
 
 import (
-	"goLeedCode/classic"
+	"goLeedCode/backtrack"
 	"goLeedCode/util"
 )
 
 func main() {
 
-	util.ListTest(classic.Test228{})
+	util.ListTest(backtrack.Test40{})
 
 }
