@@ -1,12 +1,12 @@
 package main
 
 import (
-	"goLeedCode/backtrack"
+	"goLeedCode/dynamic"
 	"goLeedCode/util"
 )
 
 func main() {
 
-	util.ListTest(backtrack.Test47{})
+	util.ListTest(dynamic.Test471{})
 
 }
