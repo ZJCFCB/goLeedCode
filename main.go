@@ -1,12 +1,12 @@
 package main
 
 import (
-	"goLeedCode/dynamic"
+	"goLeedCode/graph"
 	"goLeedCode/util"
 )
 
 func main() {
 
-	util.ListTest(dynamic.Test647{})
+	util.ListTest(graph.Test695{})
 
 }
