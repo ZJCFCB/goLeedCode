@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	util.ListTest(graph.Test684{})
+	util.ListTest(graph.Test685{})
 
 }
